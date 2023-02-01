@@ -140,8 +140,30 @@ public class CalculadoraEstadisticas
 			resultado = new ArrayList<Map<String, Object>>();
 			resultado = elPais.consultarAtletas();
 		}
-		return resultado;
+			return resultado;
 	}
+	
+	/**
+	 * Compila el pais de un atleta
+	 * 
+	 * @param nombrePais El nombre del país de interés.
+	 */
+	
+	public String ConsultarPaisdeAtleta(String Atleta)
+	{
+		
+		String resultado = null;
+		
+		for (int i = 0; i <  atletas.size() && resultado == null; i++) {
+			if(atletas.get(i).darNombre().equals(Atleta))
+				
+				resultado = atletas.get(i).darPais().darNombre();
+		}
+		
+		return resultado;
+		
+	}
+	
 
 	/**
 	 * Calcula cuál es el país con más medallistas en los juegos olímpicos. Si hay
@@ -226,6 +248,9 @@ public class CalculadoraEstadisticas
 
 		return medallistas;
 	}
+	
+	
+
 
 	/**
 	 * Calcula cuál o cuáles son los atletas estrella, es decir los que más medallas

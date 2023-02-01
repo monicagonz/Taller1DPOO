@@ -62,7 +62,9 @@ public class ConsolaOlimpicos
 					ejecutarMedallistasPorNacionYGenero();
 				else if (opcion_seleccionada == 12 && calculadora != null)
 					ejecutarPorcentajeMedallistas();
-				else if (opcion_seleccionada == 13)
+				else if (opcion_seleccionada == 13 && calculadora != null)
+					ejecutarConsultarPaisdeAtleta();
+				else if (opcion_seleccionada == 14)
 				{
 					System.out.println("Saliendo de la aplicación ...");
 					continuar = false;
@@ -102,7 +104,8 @@ public class ConsolaOlimpicos
 		System.out.println("10. Consultar el atleta todoterreno");
 		System.out.println("11. Consultar los medallistas por país y género");
 		System.out.println("12. Consultar el porcentaje de atletas que son medallistas");
-		System.out.println("13. Salir de la aplicación\n");
+		System.out.println("13. Consultar el pais de determinado atleta");
+		System.out.println("14. Salir de la aplicación\n");
 	}
 
 	/**
@@ -352,7 +355,7 @@ public class ConsolaOlimpicos
 	 */
 	private void ejecutarAtletasPorAnio()
 	{
-		System.out.println("\n" + "Medallas de un atleta en un periodo" + "\n");
+		System.out.println("\n" + "Atletas por Año" + "\n");
 
 		int anio = Integer.parseInt(input("Ingrese el año de su interés"));
 		Map<String, List<Atleta>> atletas = calculadora.atletasPorAnio(anio);
@@ -361,6 +364,19 @@ public class ConsolaOlimpicos
 		{
 			System.out.println(deporte + ": " + atletas.get(deporte).size() + " atletas");
 		}
+	}
+	
+	/**
+	 * Ejecuta la opción para consultar el pais de un atleta.
+	 */
+	
+	private void ejecutarConsultarPaisdeAtleta() {
+		
+		System.out.println("\n" + "Consultar el pais de un atleta" + "\n");
+		String Atleta = input("Ingrese el nombre del atleta: ");
+		
+		String pais = calculadora.ConsultarPaisdeAtleta(Atleta);
+		System.out.println("El atleta " + Atleta + " es de : " + pais);
 	}
 
 	/**
