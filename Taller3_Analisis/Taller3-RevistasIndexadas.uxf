@@ -1,6 +1,6 @@
-<diagram program="umletino" version="15.0.0"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>168</x><y>48</y><w>128</w><h>40</h></coordinates><panel_attributes>
+<diagram program="umletino" version="15.0.0"><zoom_level>5</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>50</x><y>175</y><w>80</w><h>25</h></coordinates><panel_attributes>
 Aplicación 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>416</x><y>0</y><w>168</w><h>152</h></coordinates><panel_attributes>
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>145</y><w>105</w><h>95</h></coordinates><panel_attributes>
 Editorial
 --
 -id: Long
@@ -11,19 +11,30 @@ _-ClassAttribute: Long_
 --
 Responsibilities
 -- Resp1
-*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>272</y><w>160</w><h>128</h></coordinates><panel_attributes>Artículo
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>395</x><y>315</y><w>100</w><h>80</h></coordinates><panel_attributes>Artículo
 --
--id: Long
-_-ClassAttribute: Long_
+-nombreArticulo: String
+-NombreAutor:String 
+-OpenAcces:Bool
 --
 #Operation(i: int): int
 /+AbstractOperation()/
 --
 Responsibilities
 -- Resp1
-*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>288</x><y>56</y><w>144</w><h>24</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>160;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>384</x><y>120</y><w>48</w><h>168</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;190;10;10;40;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>912</x><y>240</y><w>168</w><h>136</h></coordinates><panel_attributes>Autor
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>125</x><y>180</y><w>105</w><h>15</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>190;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>235</y><w>160</w><h>90</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>300;160;300;70;10;70;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>295</y><w>105</w><h>85</h></coordinates><panel_attributes>Autor
 (Corresponding Autor )
 --
+-nombre: String 
+_-ClassAttribute: Long_
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>335</y><w>180</w><h>15</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>340;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>545</x><y>210</y><w>105</w><h>75</h></coordinates><panel_attributes>Revisor
+--
 -id: Long
 _-ClassAttribute: Long_
 --
@@ -32,20 +43,10 @@ _-ClassAttribute: Long_
 --
 Responsibilities
 -- Resp1
-*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>472</x><y>304</y><w>456</w><h>24</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>550;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>728</x><y>104</y><w>168</w><h>120</h></coordinates><panel_attributes>Revisores  
---
--id: Long
-_-ClassAttribute: Long_
---
-#Operation(i: int): int
-/+AbstractOperation()/
---
-Responsibilities
--- Resp1
-*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>448</x><y>200</y><w>296</w><h>88</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;90;10;10;350;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>176</x><y>464</y><w>160</w><h>128</h></coordinates><panel_attributes>Artículo
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>475</x><y>270</y><w>80</w><h>55</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;90;10;10;140;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>200</x><y>435</y><w>100</w><h>80</h></coordinates><panel_attributes>Artículo
 (Blind)
 --
--id: Long
+-NombreArticulo:String
 _-ClassAttribute: Long_
 --
 #Operation(i: int): int
@@ -53,10 +54,10 @@ _-ClassAttribute: Long_
 --
 Responsibilities
 -- Resp1
-*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>248</x><y>104</y><w>184</w><h>376</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;450;10;10;210;10</additional_attributes></element><element><id>Relation</id><coordinates><x>576</x><y>56</y><w>264</w><h>64</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>310;60;310;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>576</x><y>24</y><w>440</w><h>232</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>530;270;530;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>568</x><y>344</y><w>160</w><h>128</h></coordinates><panel_attributes>Artículo - Modificado
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>245</x><y>235</y><w>15</w><h>210</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;400;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>180</y><w>295</w><h>40</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>570;60;570;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>160</y><w>405</w><h>145</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>790;270;790;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>395</x><y>435</y><w>100</w><h>80</h></coordinates><panel_attributes>Artículo - Modificado
 (Después de la revisión )
 --
--Autor: 
+-NombreAutor: String
 _-ClassAttribute: Long_
 --
 #Operation(i: int): int
@@ -64,8 +65,33 @@ _-ClassAttribute: Long_
 --
 Responsibilities
 -- Resp1
-*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>88</x><y>280</y><w>144</w><h>56</h></coordinates><panel_attributes>La clase articulo es 
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>125</x><y>260</y><w>105</w><h>95</h></coordinates><panel_attributes>
+Revista 
+--
+- Nombre:String 
+-id: int
+-OpenAcces: Bool
+_-ISSN: int
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>390</y><w>15</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>345</y><w>145</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>270;10;10;10;10;180</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>205</y><w>60</w><h>65</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;110;10;10;100;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>780</x><y>190</y><w>100</w><h>80</h></coordinates><panel_attributes>Usuario
+
+--
+-Nombre: String
+-Contraseña:String 
+-Login:String
+-Correo Electrónico: String
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>100</x><y>480</y><w>90</w><h>35</h></coordinates><panel_attributes>La clase articulo es 
 administrada por editorial y
  luego enviada a los revisores 
-bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>576</x><y>488</y><w>120</w><h>32</h></coordinates><panel_attributes>Version corregida
-bg=blue</panel_attributes><additional_attributes></additional_attributes></element></diagram>
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>760</x><y>265</y><w>80</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>140;10;140;140;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>225</y><w>140</w><h>15</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>260;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>150</y><w>515</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>1010;80;1010;10;10;10</additional_attributes></element></diagram>
