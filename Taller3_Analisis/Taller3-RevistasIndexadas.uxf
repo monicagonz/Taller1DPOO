@@ -1,0 +1,71 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>168</x><y>48</y><w>128</w><h>40</h></coordinates><panel_attributes>
+Aplicación 
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>416</x><y>0</y><w>168</w><h>152</h></coordinates><panel_attributes>
+Editorial
+--
+-id: Long
+_-ClassAttribute: Long_
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>272</y><w>160</w><h>128</h></coordinates><panel_attributes>Artículo
+--
+-id: Long
+_-ClassAttribute: Long_
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>288</x><y>56</y><w>144</w><h>24</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>160;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>384</x><y>120</y><w>48</w><h>168</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;190;10;10;40;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>912</x><y>240</y><w>168</w><h>136</h></coordinates><panel_attributes>Autor
+(Corresponding Autor )
+--
+-id: Long
+_-ClassAttribute: Long_
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>472</x><y>304</y><w>456</w><h>24</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>550;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>728</x><y>104</y><w>168</w><h>120</h></coordinates><panel_attributes>Revisores  
+--
+-id: Long
+_-ClassAttribute: Long_
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>448</x><y>200</y><w>296</w><h>88</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;90;10;10;350;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>176</x><y>464</y><w>160</w><h>128</h></coordinates><panel_attributes>Artículo
+(Blind)
+--
+-id: Long
+_-ClassAttribute: Long_
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>248</x><y>104</y><w>184</w><h>376</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;450;10;10;210;10</additional_attributes></element><element><id>Relation</id><coordinates><x>576</x><y>56</y><w>264</w><h>64</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>310;60;310;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>576</x><y>24</y><w>440</w><h>232</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>530;270;530;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>568</x><y>344</y><w>160</w><h>128</h></coordinates><panel_attributes>Artículo - Modificado
+(Después de la revisión )
+--
+-Autor: 
+_-ClassAttribute: Long_
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>88</x><y>280</y><w>144</w><h>56</h></coordinates><panel_attributes>La clase articulo es 
+administrada por editorial y
+ luego enviada a los revisores 
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>576</x><y>488</y><w>120</w><h>32</h></coordinates><panel_attributes>Version corregida
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element></diagram>
